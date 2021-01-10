@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Drink">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="0dp">
+    <TextView
+        android:id="@+id/menu_name"
+        android:layout_width="300dp"
+        android:layout_height="169dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@drawable/drink"
+        android:fontFamily="@font/playfair_display_bold_italic"
+        android:layout_marginLeft="55dp"
+        android:gravity="center"
+        android:text="DRINKS LIST"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textColorHighlight="#FF0000"
+        android:textColorHint="#FFFFFF"
+        android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/homeBtn"
+            android:layout_width="46dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="360dp"
+            android:onClick="navHome"
+            android:background="@drawable/home"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp">
+
+        <ImageView
+            android:id="@+id/orangeJuice"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/drink" />
+
+        <TextView
+            android:id="@+id/textOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/orangeJuice"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Orange Juice"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+
+            android:id="@+id/priceOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textOrange"
+            android:layout_toRightOf="@id/orangeJuice"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="RP. 8000"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/rmvOrange"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/addOrange"
+            android:background="@drawable/minus"
+            android:gravity="center"
+            android:onClick="rmvList"
+            />
+
+        <Button
+            android:id="@+id/addOrange"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/plus"
+            android:gravity="center"
+            android:onClick="addList"
+            />
+
+        <TextView
+            android:id="@+id/countOrange"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/rmvOrange"
+            android:gravity="center"
+            android:text="Qty:"
+            android:textSize="20sp"
+            android:textColor="#000000"
+             />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp">
+
+        <ImageView
+            android:id="@+id/appleJuice"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/drink" />
+
+        <TextView
+            android:id="@+id/textApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/appleJuice"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Apple Juice"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+
+            android:id="@+id/priceApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textApple"
+            android:layout_toRightOf="@id/appleJuice"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="RP. 8500"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/rmvApple"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/addApple"
+            android:background="@drawable/minus"
+            android:gravity="center"
+            android:onClick="rmvList"
+            />
+
+        <Button
+            android:id="@+id/addApple"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/plus"
+            android:gravity="center"
+            android:onClick="addList"
+            />
+
+        <TextView
+            android:id="@+id/countApple"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/rmvApple"
+            android:gravity="center"
+            android:text="Qty: "
+            android:textSize="20sp"
+            android:textColor="#000000"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp">
+
+        <ImageView
+            android:id="@+id/avocadoJuice"
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/drink" />
+
+        <TextView
+            android:id="@+id/textAvocado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/avocadoJuice"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Avocado Juice"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+
+            android:id="@+id/priceAvocado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textAvocado"
+            android:layout_toRightOf="@id/avocadoJuice"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="RP. 9000"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/rmvAvocado"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/addAvocado"
+            android:background="@drawable/minus"
+            android:gravity="center"
+            android:onClick="rmvList"
+            />
+
+        <Button
+            android:id="@+id/addAvocado"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/plus"
+            android:gravity="center"
+            android:onClick="addList"
+            />
+
+        <TextView
+            android:id="@+id/countAvocado"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/rmvAvocado"
+            android:gravity="center"
+            android:text="Qty: "
+            android:textSize="20sp"
+            android:textColor="#000000"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#ea7a66"
+        android:text="Place Order"
+        android:onClick="placeOrder"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="5dp"/>
+
+
+</LinearLayout>
